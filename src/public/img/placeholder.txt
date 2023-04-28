@@ -1,0 +1,1 @@
+This file exists so that the img folder is not empty. If it is empty, it will not commit.
