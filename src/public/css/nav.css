@@ -20,7 +20,7 @@ ul {
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom: rgb(37, 37, 37) 2px solid;
-    box-shadow: 5px 4px rgb(34, 34, 34);
+    /* box-shadow: 5px 4px rgb(34, 34, 34); */
     width: 100vw;
     vertical-align: middle;
     display: flex;
