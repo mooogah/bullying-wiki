@@ -49,6 +49,7 @@ a:hover {
     padding-right: 0;
     margin-right: 0;
     height: 3.5vh;
+    top: 0;
 }
 .burger div {
     width: 25px;
