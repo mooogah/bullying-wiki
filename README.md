@@ -1,2 +1,7 @@
-# Anti Bullying Wiki
-This is the offical repository of the non-profit Anti Bullying Wiki website. The aim of this project is to raise awarnes about bullying in a modern way.
+# bullying.wiki
+
+[![License](https://img.shields.io/badge/license-GPL--3.0-blue)](LICENSE)
+
+> This is the offical repository of the non-profit anti bullying.wiki website. The aim of this project is to raise awareness about bullying in a modern way.
+
+### [Jedd's Documentation](https://github.com/jedddg/bullying-wiki/blob/main/JEDD-DOCS.md)
