@@ -37,8 +37,7 @@ Explain how others can contribute to your project. You can mention guidelines fo
 
 Specify the license under which your project is distributed. You can choose from a variety of licenses such as MIT, Apache, GNU, etc. Include a link to the full license file in your repository.
 
----
 
-Feel free to customize this template to suit your project's specific needs. You can include additional sections such as "Roadmap," "Acknowledgements," or "Troubleshooting" if required.
+## Acknowledgements
 
-Happy coding!
+Shoutout Hannes for doing the styling and base JavaScript and HTML. Cool guy.
