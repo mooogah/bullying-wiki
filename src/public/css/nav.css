@@ -1,168 +1,187 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    color: white;
-    height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #41484d;
+  overflow-y: none;
+  width: 100vw;
+  overflow-x: hidden;
+  color: white;
+  height: 100%;
 }
+
 .nav-links {
-    width: 80vw;
-    vertical-align: middle;
-    position: absolute;
-    padding-top: 37px;
-    letter-spacing: 2px;
-    margin-left: 40vw;
+  width: 80vw;
+  vertical-align: middle;
+  position: absolute;
+  padding-top: 37px;
+  letter-spacing: 2px;
+  margin-left: 40vw;
 }
+
 ul {
-    list-style-type: none;
-    padding-bottom: 30px;
-    border-bottom: rgb(37, 37, 37) 2px solid;
-    /* box-shadow: 5px 4px rgb(34, 34, 34); */
-    width: 100vw;
-    padding-bottom: 60px;
-    vertical-align: middle;
-    display: flex;
+  list-style-type: none;
+  padding-bottom: 30px;
+  border-bottom: rgb(37, 37, 37) 2px solid;
+  /* box-shadow: 5px 4px rgb(34, 34, 34); */
+  width: 100vw;
+  padding-bottom: 60px;
+  vertical-align: middle;
+  display: flex;
 }
+
 li {
-    display: inline;
-    padding-left: 10vw;
-    font-size: 18px;
-    vertical-align: middle;
+  display: inline;
+  padding-left: 10vw;
+  font-size: 18px;
+  vertical-align: middle;
 }
+
 nav {
-    background-color: rgb(34, 34, 34);
-    vertical-align: middle;
+  background-color: rgb(34, 34, 34);
+  vertical-align: middle;
 }
+
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+
 a:hover {
-    color: rgb(138, 138, 138);
+  color: rgb(138, 138, 138);
 }
+
 .home {
-    font-size: 25px;
-    padding-left: 6vw;
-    width: 400px;
-    padding-right: 0;
-    margin-right: 0;
-    height: 3.5vh;
-    top: 0;
+  font-size: 25px;
+  padding-left: 6vw;
+  width: 400px;
+  padding-right: 0;
+  margin-right: 0;
+  height: 3.5vh;
+  top: 0;
 }
+
 .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    border-radius: 10px;
-    display: none;
-    transition: all 0.3s;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
+  display: none;
+  transition: all 0.3s;
 }
+
 @media screen and (max-width: 1385px) {
-    .home {
-        padding-right: 150px;
-    }
+  .home {
+    padding-right: 150px;
+  }
 }
 @media screen and (max-width: 1039px) {
-    .home {
-        padding-right: 90px;
-    }
+  .home {
+    padding-right: 90px;
+  }
 }
 @media screen and (max-width: 890px) {
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 11.6vh;
-        background-color: rgb(42, 42, 42);
-        box-shadow: -5px 4px rgb(34, 34, 34);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-        padding-right: 60px;
-        width: 40%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links li {
-        opacity: 0;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    .burger {
-        display: inline-block;
-        vertical-align: middle;
-        padding-left: 400px;
-        padding-right: 50px;
-        margin-top: 37px;
-    }
-    .burger div {
-        display: flex;
-    }
-    .home {
-        padding-left: 60px;
-        padding-right: 0;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        display: inline-block;
-        vertical-align: middle;
-    }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 11.6vh;
+    background-color: rgb(42, 42, 42);
+    box-shadow: -5px 4px rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding-right: 60px;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .burger {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 400px;
+    padding-right: 50px;
+    margin-top: 37px;
+  }
+  .burger div {
+    display: flex;
+  }
+  .home {
+    padding-left: 60px;
+    padding-right: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 @media screen and (max-width: 803px) {
-    .burger {
-        padding-left: 300px;
-        padding-right: 50px;
-    }
+  .burger {
+    padding-left: 300px;
+    padding-right: 50px;
+  }
 }
 @media screen and (max-width: 706px) {
-    .burger {
-        padding-left: 200px;
-        padding-right: 50px;
-    }
-    .title {
-        font-size: 25px;
-    }
+  .burger {
+    padding-left: 200px;
+    padding-right: 50px;
+  }
+  .title {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 600px) {
-    .burger {
-        padding-left: 150px;
-        padding-right: 50px;
-    }
+  .burger {
+    padding-left: 150px;
+    padding-right: 50px;
+  }
 }
 @media screen and (max-width: 558px) {
-    .burger {
-        padding-left: 100px;
-        padding-right: 50px;
-    }
+  .burger {
+    padding-left: 100px;
+    padding-right: 50px;
+  }
 }
 .nav-active {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
+
 .burger:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 @keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 .toggle .line2 {
-    opacity: 0;
+  opacity: 0;
 }
+
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
+  transform: rotate(45deg) translate(-5px, -6px);
+}/*# sourceMappingURL=nav.css.map */
