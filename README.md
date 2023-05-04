@@ -12,6 +12,7 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -35,8 +36,7 @@ Explain how others can contribute to your project. You can mention guidelines fo
 
 ## License
 
-Specify the license under which your project is distributed. You can choose from a variety of licenses such as MIT, Apache, GNU, etc. Include a link to the full license file in your repository.
-
+We love improvements, so we use the GPL-3.0 license
 
 ## Acknowledgements
 
