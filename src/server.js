@@ -18,4 +18,13 @@ app.use(compression());
 app.get("/", (req, res) => {
     res.render("index");
 });
+app.get("/aboutUs", (req, res) => {
+    res.render("aboutUs");
+});
+app.get("/mission", (req, res) => {
+    res.render("mission");
+});
+app.get("/events", (req, res) => {
+    res.render("events");
+});
 app.listen(3001);
