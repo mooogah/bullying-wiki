@@ -40,6 +40,10 @@ On this project GitHub was used to colaborate, keep track of changes a write doc
 #### Visual Studio Code
 Visual Studio Code is an open source IDE(integrated development environment) created by Microsoft which is a more lightweight version of Microft Visual Studio. Whilst Visual Studio Code lacks low level programming capabilities(interacting directly with the hardware with languages such as C++ or Asembly) this makes it perfect for web development as developers can benifit from the softwares simple user interface, shortuts and extentions. Visual studio code is videly used in te industry by companies such as Google and is also in use at many universities.
 
+### Usage
+  1. Install and setup Git. A guide by GitHub(https://github.com/git-guides/install-git).
+  2. Clone the GitHub respository. ```` git clone https://github.com/jedddg/bullying-wiki.git ```` 
+
 ### License
 
 We love improvements, so we use the GPL-3.0 license to ensure that our work being used is used in good favour.
