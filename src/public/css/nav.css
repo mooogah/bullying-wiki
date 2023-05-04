@@ -11,17 +11,17 @@ body {
     width: 80vw;
     vertical-align: middle;
     position: absolute;
-    padding-top: 12px;
+    padding-top: 37px;
     letter-spacing: 2px;
     margin-left: 40vw;
 }
 ul {
     list-style-type: none;
-    padding-top: 30px;
     padding-bottom: 30px;
     border-bottom: rgb(37, 37, 37) 2px solid;
     /* box-shadow: 5px 4px rgb(34, 34, 34); */
     width: 100vw;
+    padding-bottom: 60px;
     vertical-align: middle;
     display: flex;
 }
@@ -98,6 +98,7 @@ a:hover {
         vertical-align: middle;
         padding-left: 400px;
         padding-right: 50px;
+        margin-top: 37px;
     }
     .burger div {
         display: flex;
