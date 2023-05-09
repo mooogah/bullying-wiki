@@ -24,8 +24,9 @@ li {
     vertical-align: middle;
 }
 nav {
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(255, 255, 255, 0);
     vertical-align: middle;
+    box-shadow: 3px 0.5px rgb(0, 0, 0);
 }
 a {
     color: white;
@@ -33,6 +34,7 @@ a {
 }
 a:hover {
     color: rgb(138, 138, 138);
+    cursor: pointer;
 }
 .home {
     font-size: 25px;

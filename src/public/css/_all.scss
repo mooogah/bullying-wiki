@@ -2,13 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100%;
 }
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #41484d;
+    background-image: linear-gradient(
+        to bottom,
+        #1a1c1d,
+        #1a1c1d,
+        #1a1c1d,
+        #1a1c1d,
+        #1a1c1d,
+        #191f23,
+        #182229,
+        #18252f,
+        #192b3d,
+        #1e304c,
+        #2b3459,
+        #3c3664
+    );
+    /* background-image: linear-gradient(
+        to bottom,
+        #1a1c1d,
+        #18252f,
+        #192d42,
+        #253355,
+        #3c3664
+    );*/
     overflow-y: none;
     width: 100vw;
     overflow-x: hidden;
     color: white;
-    height: 100%;
+    background-size: auto;
 }

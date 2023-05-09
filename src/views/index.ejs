@@ -14,14 +14,29 @@
     </head>
     <body>
         <%- include ('./partials/nav.ejs') -%>
-        <div class="fold"><h1>Bullying.wiki</h1></div>
+        <div class="fold">
+            <h1>
+                <span class="fold-bullying"
+                    >Bullying<span class="fold-dot">.</span>wiki</span
+                >
+                <span class="fold-rest"
+                    >is creating a
+                    <span class="fold-safer-web">safer web</span></span
+                >
+            </h1>
+        </div>
         <div class="bullying-definition">
-            <h1>Bullying</h1>
+            <h1 class="bullying-definition-heading">Bullying</h1>
             <h3>bu · lee · uhng | <i>verb</i></h3>
-            <p>
-                the repeated and intentional mistreatment of others, causing
+            <p class="definition-body">
+                The repeated and intentional mistreatment of others, causing<br />
                 harm and distress through various forms of aggression and abuse.
             </p>
+        </div>
+        <div class="our-mission-button-container">
+            <h1 class="our-mission-button-text">
+                <a href="./mission">Our Mission</a>
+            </h1>
         </div>
     </body>
     <script type="text/javascript" src="/app/nav.js"></script>

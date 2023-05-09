@@ -27,4 +27,4 @@ app.get("/mission", (req, res) => {
 app.get("/events", (req, res) => {
     res.render("events");
 });
-app.listen(3001);
+app.listen(3002);
