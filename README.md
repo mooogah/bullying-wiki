@@ -46,8 +46,9 @@ Visual Studio Code is an open source IDE(integrated development environment) cre
   2. Clone the GitHub respository. ```` git clone https://github.com/jedddg/bullying-wiki.git ```` 
   3. Open terminal, and navigate to the folder using ````cd````
   4. Check if npm is installed by running ````npm````. If not, install Node.js and NPM(https://docs.npmjs.com/downloading-and-installing-     node-js-and-npm)
-  5. Run ````npm run dev````
-  6. Visit ````localhost:3001````
+  5. To make sure that all dpendecies are installed, run ````npm i````.
+  6. Run ````npm run dev````
+  7. Visit ````localhost:3001````
 
 ### License
 
