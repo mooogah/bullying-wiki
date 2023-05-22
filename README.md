@@ -23,23 +23,63 @@ Unfortunately, issues like these are not being properly raised.
 
 ### Technologies
 
+
 #### EJS
-EJS(Embedded JavaScript) is a templating engine for JavaScript that is widely used in web development for creating dynamic web pages and web applications. EJS works just like HTML(Hyper text markup language) but developers can seamlessly integrate Java Script code with their HTML code to create more dinamic and fluent applications for the web. Furthermore EJS allows the use of partials. This allows developers to nest .ejs files within each other to create re-usable components that assemble into complete HTML files at run time. This is also done by frameworks like react, but unlike react, EJS is much more user friendly as it is based of the HTML syntax and is allot more light wheight. 
-On this project EJS was mainly utilized for the navigation bar which saved allot of code since the HTML code did not have to be duplicated and redered seperatly on each individual page.
+EJS (Embedded JavaScript) is a JavaScript templating engine widely used in web development to create dynamic web pages and applications. It functions similar to HTML (Hyper Text Markup Language), but allows seamless integration of JavaScript code within HTML, enabling the creation of more dynamic and fluent web applications. EJS also supports the use of partials, which allows developers to nest .ejs files to create reusable components that assemble into complete HTML files at runtime. Unlike React, EJS is more user-friendly as it follows the HTML syntax and is lightweight. In this project, EJS was mainly used for the navigation bar, reducing code duplication and separate rendering on each page.
 
 #### Node.js
-Node.js is an open source cross platform Java Script runntime enviroment that is built on google chrome's V8 Java Script engine. This allows Java Script to run outside of the web development enviroment to power server side(backend), mobile apps or other non web applications with Java Script. Java Script is a must in any web developers tool kit mainly due to its Node Package Manager(NPM) which allows developers to install many communiity build packages into their projects which add additional functionality such as Express.js or EJS. Node.js is often considered to be one of the most important project in Java Script development history. Organisations such as Netflix, NASA, Trello, PayPal, Linkedin, Walmart, Uber, Twitter, eBay, GoDaddy and CitiBank are ussing Node.js for its versitility and efficientcy. 
+Node.js is an open-source, cross-platform JavaScript runtime environment built on Google Chrome's V8 JavaScript engine. It enables JavaScript to run outside the web development environment, powering server-side (backend), mobile apps, and non-web applications with JavaScript. JavaScript is essential in a web developer's toolkit, mainly due to its Node Package Manager (NPM), which allows installation of community-built packages such as Express.js or EJS, adding additional functionality. Node.js is considered one of the most significant projects in JavaScript development history. Major organizations like Netflix, NASA, Trello, PayPal, LinkedIn, Walmart, Uber, Twitter, eBay, GoDaddy, and Citibank utilize Node.js for its versatility and efficiency.
 
 #### Express.js
-Epress.js comonly refered to as express is a versitile framework for node.js that aim to simplefy the web development process by giving the developer acess to a powerfull API(Application programming interface) which simpplifies complex tasks such as routing, logging, authentication, HTTP reguest handaling and much more. Companies such as twitter and trustpilot use Express.js as part of their techstack due to its metioned versitility. 
-On this project epress was utilized for the rounting, this allowed us to set up different routes for our various pages in a secure and moderd way without the extention of .html.
+Express.js, commonly referred to as Express, is a versatile framework for Node.js that simplifies the web development process. It provides developers with a powerful API (Application Programming Interface) that simplifies complex tasks like routing, logging, authentication, and handling HTTP requests. Companies like Twitter and Trustpilot include Express.js in their tech stack due to its versatility. In this project, Express was used for routing, allowing the setup of different routes for various pages in a secure and modern way without the need for the .html extension.
 
 #### GitHub
-GitHub is a centralized version controll, code managment and hosting platforms that allows developers to colaborate on software projects and track changes to their codebase. GitHub utilizes Git, and open source version controll system that acts as a link between the developers local repository and the cloud based repository on GitHub. Furthermore GitHub acts as a social platform that enables developers to share their coding journey and keeps track of a developers activity, which interests companies that are looking to hire. Out of the tens of thousands of companies that use GitHub in their tech stack some popular ones include Netflix, Airbnb, Shopify, Udemy and Reddit.
-On this project GitHub was used to colaborate, keep track of changes a write documentaion. 
+GitHub is a centralized version control, code management, and hosting platform that facilitates collaboration on software projects and tracks changes to codebases. It utilizes Git, an open-source version control system that links the developer's local repository with the cloud-based repository on GitHub. GitHub also serves as a social platform where developers can share their coding journey and showcase their activity, which interests companies in search of hiring opportunities. Among the tens of thousands of companies that use GitHub in their tech stack, popular ones include Netflix, Airbnb, Shopify, Udemy, and Reddit. In this project, GitHub was used for collaboration, change tracking, and documentation.
 
 #### Visual Studio Code
-Visual Studio Code is an open source IDE(integrated development environment) created by Microsoft which is a more lightweight version of Microft Visual Studio. Whilst Visual Studio Code lacks low level programming capabilities(interacting directly with the hardware with languages such as C++ or Asembly) this makes it perfect for web development as developers can benifit from the softwares simple user interface, shortuts and extentions. Visual studio code is videly used in te industry by companies such as Google and is also in use at many universities.
+Visual Studio Code is an open-source Integrated Development Environment (IDE) created by Microsoft. It is a lightweight version of Microsoft Visual Studio. While Visual Studio Code lacks low-level programming capabilities for languages like C++ or Assembly, it is well-suited for web development. Developers benefit from its simple user interface, shortcuts, and extensions. Visual Studio Code is widely used in the industry by companies like Google and is also popular in many universities.
+
+### Explanation
+
+#### index.js
+The `index.js` code sets up a web server using the Express.js framework, applies security and performance enhancements, and defines routes for different pages.
+
+The code imports the necessary modules: express, helmet, and compression.
+> These modules are required for creating the web server, enhancing security, and improving performance.
+
+The code initializes an instance of the Express application by calling `express()`.
+> The created instance is assigned to the variable app.
+
+The code sets the view engine to EJS (Embedded JavaScript) using `app.set("view engine", "ejs")`.
+> It specifies the directory where the EJS views are located by setting `app.set("views", "./src/views")`.
+
+The code uses express.static middleware to serve static files (such as CSS, images) from the "public" directory.
+> The `__dirname` variable represents the current directory.
+
+The code applies the Helmet middleware using `app.use(helmet())`.
+> Helmet is a collection of security-related middleware functions that enhance the security of the web application.
+> It helps protect the application from various attacks and vulnerabilities.
+> The code also disables the "x-powered-by" header using `app.disable("x-powered-by")`.
+> Disabling this header removes server information from the response, providing an additional layer of security.
+
+The code applies the Compression middleware using `app.use(compression())`.
+> Compression is a middleware that enables gzip compression for the responses sent by the server.
+> This helps reduce the size of the responses and improves the overall performance of the web application.
+
+The code defines routes for different pages using `app.get()`.
+> For example, when a GET request is made to the root URL ("/"), the server renders the "index" template using `res.render("index")`.
+> Similarly, when requests are made to `"/aboutUs"`, `"/mission"`, and `"/events"`, the corresponding EJS templates are rendered.
+
+The code starts the server and makes it listen on port 3001 using `app.listen(3001)`.
+> This means the web application will be accessible at `http://localhost:3001`.
+
+### The Future
+
+For the rest of the term I would love to get this website finished with Hannes to have a site that clearly emphazises the problem of bullying and how to combat it.
+
+I plan to host the site by the end of the term with my Raspberry Pi, using Cloudflare Tunnels to securely host it to the internet without needing to open ports on my router.
+
+The site should hopefully be indexed high on Google so people can access and view the website, I may need to look into SEO if it is low in Google results.
 
 ### Usage
   1. Install and setup Git. A guide by GitHub(https://github.com/git-guides/install-git).
