@@ -22,6 +22,7 @@ Unfortunately, issues like these are not being properly raised.
 ## Documentation
 
 ### Technologies
+
 #### EJS
 EJS(Embedded JavaScript) is a templating engine for JavaScript that is widely used in web development for creating dynamic web pages and web applications. EJS works just like HTML(Hyper text markup language) but developers can seamlessly integrate Java Script code with their HTML code to create more dinamic and fluent applications for the web. Furthermore EJS allows the use of partials. This allows developers to nest .ejs files within each other to create re-usable components that assemble into complete HTML files at run time. This is also done by frameworks like react, but unlike react, EJS is much more user friendly as it is based of the HTML syntax and is allot more light wheight. 
 On this project EJS was mainly utilized for the navigation bar which saved allot of code since the HTML code did not have to be duplicated and redered seperatly on each individual page.
