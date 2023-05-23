@@ -138,13 +138,22 @@ I plan to host the site by the end of the term with my Raspberry Pi, using Cloud
 The site should hopefully be indexed high on Google so people can access and view the website, I may need to look into SEO if it is low in Google results.
 
 ### Usage
-  1. Install and setup Git. A guide by GitHub(https://github.com/git-guides/install-git).
-  2. Clone the GitHub respository. ```` git clone https://github.com/jedddg/bullying-wiki.git ```` 
-  3. Open terminal, and navigate to the folder using ````cd````
-  4. Check if npm is installed by running ````npm````. If not, install Node.js and NPM(https://docs.npmjs.com/downloading-and-installing-     node-js-and-npm)
-  5. To make sure that all dpendecies are installed, run ````npm i````.
-  6. Run ````npm run dev````
-  7. Visit ````localhost:3001````
+1. Install and set up Git. A guide by GitHub (https://github.com/git-guides/install-git).
+2. Clone the GitHub repository. 
+```bash
+git clone https://github.com/jedddg/bullying-wiki.git
+```
+3. Open the terminal and navigate to the folder using `cd`.
+4. Check if npm is installed by running `npm` in the terminal. If not, install Node.js and NPM (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+5. To make sure that all dependencies are installed, run 
+```bash
+npm i
+````
+6. Run 
+```bash
+npm run dev
+```
+7. Visit `https://localhost:3001`.
 
 ### License
 
