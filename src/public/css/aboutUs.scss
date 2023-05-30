@@ -4,18 +4,37 @@ body {
     padding-right: 20px;
 }
 .such-as-list-item {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
     width: 600px;
     padding: 20px;
     border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+    position: relative;
 }
 .such-as-list-item-number {
-    background-image: linear-gradient(to bottom, #1a1c1d, #3c3664);
-    background-clip: text;
-    text-fill-color: transparent;
-    font-size: 30px;
+    font-size: 60px;
+    position: absolute;
+    margin-top: 0;
+    padding-top: 0;
+    background: -webkit-linear-gradient(
+        white,
+        white,
+        #3c3664,
+        #3c3664,
+        #3c3664
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    bottom: 0;
+    padding-top: 25px;
 }
 .such-as-list-item-text {
-    margin-left: 50px;
+    padding-left: 50px;
 }
