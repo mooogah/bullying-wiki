@@ -21,24 +21,38 @@ Unfortunately, issues like these are not being properly raised.
 
 ## Documentation
 
+### Explanation[^1]
+
 ### Technologies
 
 #### EJS
-EJS (Embedded JavaScript) is a JavaScript templating engine widely used in web development to create dynamic web pages and applications. It functions similar to HTML (Hyper Text Markup Language), but allows seamless integration of JavaScript code within HTML, enabling the creation of more dynamic and fluent web applications. EJS also supports the use of partials, which allows developers to nest .ejs files to create reusable components that assemble into complete HTML files at runtime. Unlike React, EJS is more user-friendly as it follows the HTML syntax and is lightweight. In this project, EJS was mainly used for the navigation bar, reducing code duplication and separate rendering on each page.
+EJS (Embedded JavaScript) is a JavaScript templating engine widely used in web development to create dynamic web pages and applications. It functions similar to HTML (Hyper Text Markup Language), but allows seamless integration of JavaScript code within HTML, enabling the creation of more dynamic and fluent web applications.
+
+EJS also supports the use of partials, which allows developers to nest .ejs files to create reusable components that assemble into complete HTML files at runtime. Unlike React, EJS is more user-friendly as it follows the HTML syntax and is lightweight. In this project, EJS was mainly used for the navigation bar, reducing code duplication and separate rendering on each page.
 
 #### Node.js
-Node.js is an open-source, cross-platform JavaScript runtime environment built on Google Chrome's V8 JavaScript engine. It enables JavaScript to run outside the web development environment, powering server-side (backend), mobile apps, and non-web applications with JavaScript. JavaScript is essential in a web developer's toolkit, mainly due to its Node Package Manager (NPM), which allows installation of community-built packages such as Express.js or EJS, adding additional functionality. Node.js is considered one of the most significant projects in JavaScript development history. Major organizations like Netflix, NASA, Trello, PayPal, LinkedIn, Walmart, Uber, Twitter, eBay, GoDaddy, and Citibank utilize Node.js for its versatility and efficiency.
+Node.js is an open-source, cross-platform JavaScript runtime environment built on Google Chrome's V8 JavaScript engine. It enables JavaScript to run outside the web development environment, powering server-side (backend), mobile apps, and non-web applications with JavaScript.
+
+JavaScript is essential in a web developer's toolkit, mainly due to its Node Package Manager (NPM), which allows installation of community-built packages such as Express.js or EJS, adding additional functionality. Node.js is considered one of the most significant projects in JavaScript development history.
+
+Major organizations like Netflix, NASA, Trello, PayPal, LinkedIn, Walmart, Uber, Twitter, eBay, GoDaddy, and Citibank utilize Node.js for its versatility and efficiency.
 
 #### Express.js
-Express.js, commonly referred to as Express, is a versatile framework for Node.js that simplifies the web development process. It provides developers with a powerful API (Application Programming Interface) that simplifies complex tasks like routing, logging, authentication, and handling HTTP requests. Companies like Twitter and Trustpilot include Express.js in their tech stack due to its versatility. In this project, Express was used for routing, allowing the setup of different routes for various pages in a secure and modern way without the need for the .html extension.
+Express.js, commonly referred to as Express, is a versatile framework for Node.js that simplifies the web development process. It provides developers with a powerful API (Application Programming Interface) that simplifies complex tasks like routing, logging, authentication, and handling HTTP requests.
+
+Companies like Twitter and Trustpilot include Express.js in their tech stack due to its versatility. In this project, Express was used for routing, allowing the setup of different routes for various pages in a secure and modern way without the need for the .html extension.
 
 #### GitHub
-GitHub is a centralized version control, code management, and hosting platform that facilitates collaboration on software projects and tracks changes to codebases. It utilizes Git, an open-source version control system that links the developer's local repository with the cloud-based repository on GitHub. GitHub also serves as a social platform where developers can share their coding journey and showcase their activity, which interests companies in search of hiring opportunities. Among the tens of thousands of companies that use GitHub in their tech stack, popular ones include Netflix, Airbnb, Shopify, Udemy, and Reddit. In this project, GitHub was used for collaboration, change tracking, and documentation.
+GitHub is a centralized version control, code management, and hosting platform that facilitates collaboration on software projects and tracks changes to codebases. It utilizes Git, an open-source version control system that links the developer's local repository with the cloud-based repository on GitHub.
+
+GitHub also serves as a social platform where developers can share their coding journey and showcase their activity, which interests companies in search of hiring opportunities. Among the tens of thousands of companies that use GitHub in their tech stack, popular ones include Netflix, Airbnb, Shopify, Udemy, and Reddit.
+
+In this project, GitHub was used for collaboration, change tracking, and documentation.
 
 #### Visual Studio Code
-Visual Studio Code is an open-source Integrated Development Environment (IDE) created by Microsoft. It is a lightweight version of Microsoft Visual Studio. While Visual Studio Code lacks low-level programming capabilities for languages like C++ or Assembly, it is well-suited for web development. Developers benefit from its simple user interface, shortcuts, and extensions. Visual Studio Code is widely used in the industry by companies like Google and is also popular in many universities.
+Visual Studio Code is an open-source Integrated Development Environment (IDE) created by Microsoft. It is a lightweight version of Microsoft Visual Studio. While Visual Studio Code lacks low-level programming capabilities for languages like C++ or Assembly, it is well-suited for web development.
 
-### Explanation[^1]
+Developers benefit from its simple user interface, shortcuts, and extensions. Visual Studio Code is widely used in the industry by companies like Google and is also popular in many universities.
 
 #### ./src/index.js
 The `index.js` code sets up a web server using the Express.js framework, applies security and performance enhancements, and defines routes for different pages.
@@ -129,8 +143,6 @@ The `mission.ejs` file represents the "Our Mission" page of the Bullying Wiki we
 
 > The **p** tag contains a paragraph describing the mission of the Bullying Wiki website, which is to bring awareness to the issue of bullying and cyber-bullying in a fun and informative way.
 
-[^1]: Documentation was partially written by ChatGPT.
-
 ### The Future
 
 For the rest of the term I would love to get this website finished with Hannes to have a site that clearly emphazises the problem of bullying and how to combat it.
@@ -164,3 +176,5 @@ We love improvements, so we use the GPL-3.0 license to ensure that our work bein
 ### Acknowledgements
 
 Shoutout Hannes for doing the styling and base JavaScript and HTML. Cool guy.
+
+[^1]: Documentation was partially written by ChatGPT.
