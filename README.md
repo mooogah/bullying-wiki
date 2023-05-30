@@ -17,7 +17,7 @@
 
 Bullying, in forms of verbal abuse, physical abuse or tall poppy syndrome is now extremely common amongst teens in schools or public places and has now increased due to the form of cyberbullying taking place. A survey conducted by the National Centre Against Bullying (NCAB) found 1 in 4 Australian students have reported being bullied. Imagine the amount of other kids who have stayed silent through their teenage years.
 
-Unfortunately, issues like these are not being properly raised.
+Unfortunately, issues like these are not being properly raised and talked about.
 
 ## Documentation
 
@@ -101,6 +101,11 @@ The `index.ejs` file represents the home page of the Bullying Wiki website. It p
 - Finally, the `script` tag references a JavaScript file named "nav.js" for any additional functionality related to navigation.
 
 This structure and content work together to create the visual and interactive elements of the Bullying Wiki home page, providing visitors with information about bullying and ways to combat it.
+
+![image](https://github.com/jedddg/bullying-wiki/assets/38686545/a51dec4b-919c-4de3-a3f5-441f3577b9f4)
+![image](https://github.com/jedddg/bullying-wiki/assets/38686545/a0a306ed-0f4c-4d7e-b2e1-d420e91d4710)
+![image](https://github.com/jedddg/bullying-wiki/assets/38686545/a4d531f5-bf9e-4acc-a1ba-0c80080733cc)
+
 #### ./src/views/aboutUs.ejs
 
 The `aboutUs.ejs` file represents the "About Us" page of the Bullying Wiki website. It provides the HTML structure and content for the page, including the page title, favicon, CSS stylesheets, and JavaScript file references. Here's a breakdown of the code:
@@ -112,6 +117,8 @@ The `aboutUs.ejs` file represents the "About Us" page of the Bullying Wiki websi
 - The `p` element contains paragraphs of text that describe the purpose and mission of the Bullying Wiki website.
 - Within the paragraphs, there are several `div` elements representing items related to cyberbullying, such as understanding cyberbullying, prevention strategies, victim support, bystander intervention, and legislation and reporting.
 - Each of these items is structured as a `div` element with a number and a corresponding description.
+
+![image](https://github.com/jedddg/bullying-wiki/assets/38686545/d0871031-47ef-4d61-8560-483ad7096ad6)
 
 #### ./src/views/events.ejs
 
@@ -126,9 +133,13 @@ As of right now, it includes nothing useful but it currently has
 
 Same as `events.ejs`, it doesn't have anything useful, but as of right now has the same components as `events.ejs` with a bit of text.
 
+![image](https://github.com/jedddg/bullying-wiki/assets/38686545/28695096-d2b2-4a66-b6e2-897316d6b369)
+
 ### The Future
 
 For the rest of the term I would love to get this website finished with Hannes to have a site that clearly emphazises the problem of bullying and how to combat it.
+
+I want the main page to be filled with a lot more content. What I have now is a starting point and an idea of what I am envisioning.
 
 I plan to host the site by the end of the term with my Raspberry Pi, using Cloudflare Tunnels to securely host it to the internet without needing to open ports on my router.
 
