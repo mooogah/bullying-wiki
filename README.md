@@ -104,7 +104,7 @@ This structure and content work together to create the visual and interactive el
 
 ![image](https://github.com/jedddg/bullying-wiki/assets/38686545/a51dec4b-919c-4de3-a3f5-441f3577b9f4)
 ![image](https://github.com/jedddg/bullying-wiki/assets/38686545/a0a306ed-0f4c-4d7e-b2e1-d420e91d4710)
-![image](https://github.com/jedddg/bullying-wiki/assets/38686545/a4d531f5-bf9e-4acc-a1ba-0c80080733cc)
+![image](https://github.com/jedddg/bullying-wiki/assets/38686545/a4d531f5-bf9e-4acc-a1ba-0c80080733cc)[^2]
 
 #### ./src/views/aboutUs.ejs
 
@@ -118,7 +118,7 @@ The `aboutUs.ejs` file represents the "About Us" page of the Bullying Wiki websi
 - Within the paragraphs, there are several `div` elements representing items related to cyberbullying, such as understanding cyberbullying, prevention strategies, victim support, bystander intervention, and legislation and reporting.
 - Each of these items is structured as a `div` element with a number and a corresponding description.
 
-![image](https://github.com/jedddg/bullying-wiki/assets/38686545/d0871031-47ef-4d61-8560-483ad7096ad6)
+![image](https://github.com/jedddg/bullying-wiki/assets/38686545/d0871031-47ef-4d61-8560-483ad7096ad6)[^3]
 
 #### ./src/views/events.ejs
 
@@ -133,7 +133,7 @@ As of right now, it includes nothing useful but it currently has
 
 Same as `events.ejs`, it doesn't have anything useful, but as of right now has the same components as `events.ejs` with a bit of text.
 
-![image](https://github.com/jedddg/bullying-wiki/assets/38686545/28695096-d2b2-4a66-b6e2-897316d6b369)
+![image](https://github.com/jedddg/bullying-wiki/assets/38686545/28695096-d2b2-4a66-b6e2-897316d6b369)[^4]
 
 ### The Future
 
@@ -172,3 +172,6 @@ We love improvements, so we use the GPL-3.0 license to ensure that our work bein
 Shoutout Hannes for doing some styling and base HTML. Cool guy.
 
 [^1]: Documentation was partially written by ChatGPT.
+[^2]: Image of the home page of bullying.wiki that is hosted locally on a Mac.
+[^3]: Image of the about me page of bullying.wiki that is hosted locally on a Mac.
+[^4]: Image of the mission page of bullying.wiki that is hosted locally on a Mac.
