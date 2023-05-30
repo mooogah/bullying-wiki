@@ -38,7 +38,7 @@ GitHub is a centralized version control, code management, and hosting platform t
 #### Visual Studio Code
 Visual Studio Code is an open-source Integrated Development Environment (IDE) created by Microsoft. It is a lightweight version of Microsoft Visual Studio. While Visual Studio Code lacks low-level programming capabilities for languages like C++ or Assembly, it is well-suited for web development. Developers benefit from its simple user interface, shortcuts, and extensions. Visual Studio Code is widely used in the industry by companies like Google and is also popular in many universities.
 
-### Explanation
+### Explanation[^1]
 
 #### ./src/index.js
 The `index.js` code sets up a web server using the Express.js framework, applies security and performance enhancements, and defines routes for different pages.
@@ -128,6 +128,8 @@ The `mission.ejs` file represents the "Our Mission" page of the Bullying Wiki we
 > The **incldue** statement includes the navigation section from a partial file named `nav.ejs`.
 
 > The **p** tag contains a paragraph describing the mission of the Bullying Wiki website, which is to bring awareness to the issue of bullying and cyber-bullying in a fun and informative way.
+
+[^1]: Documentation was partially written by ChatGPT.
 
 ### The Future
 
