@@ -1,14 +1,28 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(to bottom, #1a1c1d, #1a1c1d, #1a1c1d, #1a1c1d, #1a1c1d, #191f23, #182229, #18252f, #192b3d, #1e304c, #2b3459, #3c3664);
-  /* background-image: linear-gradient(
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(
+        to bottom,
+        #1a1c1d,
+        #1a1c1d,
+        #1a1c1d,
+        #1a1c1d,
+        #1a1c1d,
+        #191f23,
+        #182229,
+        #18252f,
+        #192b3d,
+        #1e304c,
+        #2b3459,
+        #3c3664
+    );
+    /* background-image: linear-gradient(
       to bottom,
       #1a1c1d,
       #18252f,
@@ -16,45 +30,51 @@ body {
       #253355,
       #3c3664
   );*/
-  overflow-y: none;
-  width: 100vw;
-  overflow-x: hidden;
-  color: white;
-  background-size: auto;
+    overflow-y: none;
+    width: 100vw;
+    overflow-x: hidden;
+    color: white;
+    background-size: auto;
 }
 
 body {
-  padding-left: 20px;
-  padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .such-as-list-item {
-  background-color: rgb(255, 255, 255);
-  color: black;
-  width: 600px;
-  padding: 20px;
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  box-shadow: 0 0 10px #fff;
-  position: relative;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 10px #fff;
+    position: relative;
 }
 
 .such-as-list-item-number {
-  font-size: 60px;
-  position: absolute;
-  margin-top: 0;
-  padding-top: 0;
-  background: -webkit-linear-gradient(white, white, #3c3664, #3c3664, #3c3664);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  top: 0;
-  bottom: 0;
-  padding-top: 25px;
+    font-size: 60px;
+    position: absolute;
+    margin-top: 0;
+    padding-top: 0;
+    background: -webkit-linear-gradient(
+        white,
+        white,
+        #3c3664,
+        #3c3664,
+        #3c3664
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    bottom: 0;
+    padding-top: 25px;
 }
 
 .such-as-list-item-text {
-  padding-left: 50px;
-}/*# sourceMappingURL=aboutUs.css.map */
+    padding-left: 50px;
+} /*# sourceMappingURL=aboutUs.css.map */
