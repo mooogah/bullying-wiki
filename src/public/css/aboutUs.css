@@ -21,4 +21,29 @@ body {
   overflow-x: hidden;
   color: white;
   background-size: auto;
+}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.such-as-list-item {
+  background-color: white;
+  color: black;
+  width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.such-as-list-item-number {
+  background-image: linear-gradient(to bottom, #1a1c1d, #3c3664);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-fill-color: transparent;
+  font-size: 30px;
+}
+
+.such-as-list-item-text {
+  margin-left: 50px;
 }/*# sourceMappingURL=aboutUs.css.map */
