@@ -21,8 +21,6 @@ Unfortunately, issues like these are not being properly raised and talked about.
 
 ## Documentation
 
-### Explanation[^1]
-
 ### Technologies
 
 #### EJS
@@ -53,6 +51,8 @@ In this project, GitHub was used for collaboration, change tracking, and documen
 Visual Studio Code is an open-source IDE (Integrated Development Environment) created by Microsoft. It is a lightweight version of Microsoft Visual Studio. While Visual Studio Code lacks low-level programming capabilities for languages like C++ or Assembly, it is well-suited for web development.
 
 Developers benefit from its simple user interface, shortcuts, and extensions. Visual Studio Code is widely used in the industry by companies like Google and is also popular in many universities.
+
+### Explanation[^1]
 
 #### ./src/index.js
 The `index.js` code sets up a web server using the Express.js framework, applies security and performance enhancements, and defines routes for different pages.
@@ -137,13 +137,13 @@ Same as `events.ejs`, it doesn't have anything useful, but as of right now has t
 
 ### The Future
 
-For the rest of the term I would love to get this website finished with Hannes to have a site that clearly emphazises the problem of bullying and how to combat it.
+For the rest of the term I would love to get this website finished to have a site that clearly emphazises the problem of bullying and how to combat it.
 
 I want the main page to be filled with a lot more content. What I have now is a starting point and an idea of what I am envisioning.
 
 I plan to host the site by the end of the term with my Raspberry Pi, using Cloudflare Tunnels to securely host it to the internet without needing to open ports on my router.
 
-The site should hopefully be indexed high on Google so people can access and view the website, I may need to look into SEO if it is low in Google results.
+The site should hopefully be indexed high on Google so people can access and view the website, I may need to look into SEO if it is low in Google results, but I shall see what happens.
 
 ### Usage
 1. Install and set up Git. A guide by GitHub (https://github.com/git-guides/install-git).
@@ -169,6 +169,6 @@ We love improvements, so we use the GPL-3.0 license to ensure that our work bein
 
 ### Acknowledgements
 
-Shoutout Hannes for doing the styling and base JavaScript and HTML. Cool guy.
+Shoutout Hannes for doing some styling and base HTML. Cool guy.
 
 [^1]: Documentation was partially written by ChatGPT.
