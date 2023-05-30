@@ -58,90 +58,73 @@ Developers benefit from its simple user interface, shortcuts, and extensions. Vi
 The `index.js` code sets up a web server using the Express.js framework, applies security and performance enhancements, and defines routes for different pages.
 
 The code imports the necessary modules: express, helmet, and compression.
-> These modules are required for creating the web server, enhancing security, and improving performance.
+- These modules are required for creating the web server, enhancing security, and improving performance.
 
 The code initializes an instance of the Express application by calling `express()`.
-> The created instance is assigned to the variable app.
+- The created instance is assigned to the variable app.
 
 The code sets the view engine to EJS (Embedded JavaScript) using `app.set("view engine", "ejs")`.
-> It specifies the directory where the EJS views are located by setting `app.set("views", "./src/views")`.
+- It specifies the directory where the EJS views are located by setting `app.set("views", "./src/views")`.
 
 The code uses express.static middleware to serve static files (such as CSS, images) from the "public" directory.
-> The `__dirname` variable represents the current directory.
+- The `__dirname` variable represents the current directory.
 
 The code applies the Helmet middleware using `app.use(helmet())`.
-> Helmet is a collection of security-related middleware functions that enhance the security of the web application.
-> It helps protect the application from various attacks and vulnerabilities.
-> The code also disables the "x-powered-by" header using `app.disable("x-powered-by")`.
-> Disabling this header removes server information from the response, providing an additional layer of security.
+- Helmet is a collection of security-related middleware functions that enhance the security of the web application.
+- It helps protect the application from various attacks and vulnerabilities.
+- The code also disables the "x-powered-by" header using `app.disable("x-powered-by")`.
+- Disabling this header removes server information from the response, providing an additional layer of security.
 
 The code applies the Compression middleware using `app.use(compression())`.
-> Compression is a middleware that enables gzip compression for the responses sent by the server.
-> This helps reduce the size of the responses and improves the overall performance of the web application.
+- Compression is a middleware that enables gzip compression for the responses sent by the server.
+- This helps reduce the size of the responses and improves the overall performance of the web application.
 
 The code defines routes for different pages using `app.get()`.
-> For example, when a GET request is made to the root URL ("/"), the server renders the "index" template using `res.render("index")`.
-> Similarly, when requests are made to `"/aboutUs"`, `"/mission"`, and `"/events"`, the corresponding EJS templates are rendered.
+- For example, when a GET request is made to the root URL ("/"), the server renders the "index" template using `res.render("index")`.
+- Similarly, when requests are made to `"/aboutUs"`, `"/mission"`, and `"/events"`, the corresponding EJS templates are rendered.
 
 The code starts the server and makes it listen on port 3001 using `app.listen(3001)`.
-> This means the web application will be accessible at `http://localhost:3001`.
+- This means the web application will be accessible at `http://localhost:3001`.
 
 #### ./src/views/index.ejs
-The `index.ejs` file represents the home page of the Bullying Wiki website. It contains the HTML structure and content for the home page, including the page title, favicon, CSS stylesheets, and JavaScript file references. Here's a breakdown of the code:
-> The **head** section includes the necessary metadata, such as character encoding, viewport settings, and page title.
+The `index.ejs` file represents the home page of the Bullying Wiki website. It provides the HTML structure and content for the home page, including the page title, favicon, CSS stylesheets, and JavaScript file references. Here's a breakdown of the code:
 
-> External resources, such as the website logo and CSS stylesheets, are linked using the **link** tags.
+- The `head` section includes necessary metadata, such as character encoding, viewport settings, and the page title.
+- The `include` statement `./partials/nav.ejs` includes the navigation component in the page.
+- External resources, such as the website logo and CSS stylesheets, are linked using the `link` tags.
+- The `body` section contains the main content of the home page.
+- The `fold` div represents the top section of the page, which displays the website name "Bullying.wiki" and a tagline about creating a safer web.
+- The `bullying-definition` div provides a definition of bullying, including its pronunciation and a description of its meaning.
+- The `our-mission-button-container` div contains a button with a link to the "Our Mission" page.
+- The `image-container` div displays an image related to statistics.
+- Following the `body` section, there are additional div elements representing different sections of the page, including hooks to engage the reader and provide information on how to help stop cyberbullying.
+- Finally, the `script` tag references a JavaScript file named "nav.js" for any additional functionality related to navigation.
 
-> The **body** section contains the main content of the home page.
-
-> The **fold** div represents the top section of the page, which includes the website name "Bullying.wiki" and a tagline about creating a safer web.
-
-> The **bullying-definition** div provides a definition of bullying, including the pronunciation and a description of its meaning.
-
-> The **our-mission-button-container** div contains a button with a link to the "Our Mission" page.
-
-> The **script** tag at the end references a JavaScript file named `nav.js` for any additional functionality related to navigation.
-
+This structure and content work together to create the visual and interactive elements of the Bullying Wiki home page, providing visitors with information about bullying and ways to combat it.
 #### ./src/views/aboutUs.ejs
 
-The `aboutUs.ejs` file represents the "About Us" page of the Bullying Wiki website. It contains the HTML structure and content for the about us page, including the page title, favicon, CSS stylesheets, and JavaScript file references. Here's a breakdown of the code:
+The `aboutUs.ejs` file represents the "About Us" page of the Bullying Wiki website. It provides the HTML structure and content for the page, including the page title, favicon, CSS stylesheets, and JavaScript file references. Here's a breakdown of the code:
 
-> The **head** section includes the necessary metadata, such as character encoding, viewport settings, and page title.
-
-> External resources, such as the website logo and CSS stylesheets, are linked using the **link** tags.
-
-> The **body** section contains the main content of the about us page.
-
-> The **include** statement includes the navigation section from a partial file named `nav.ejs`.
-
-> The **p** tag contains a paragraph describing the creators of the website and their motivation behind creating it.
-
-> The **h2** tag represents the heading "Meet the team," which likely introduces information about the individuals involved in the project.
+- The `head` section includes necessary metadata, such as character encoding, viewport settings, and the page title.
+- External resources, such as the website logo and CSS stylesheets, are linked using the `link` tags.
+- The `body` section contains the main content of the "About Us" page.
+- The `include` statement `./partials/nav.ejs` includes the navigation component in the page.
+- The `p` element contains paragraphs of text that describe the purpose and mission of the Bullying Wiki website.
+- Within the paragraphs, there are several `div` elements representing items related to cyberbullying, such as understanding cyberbullying, prevention strategies, victim support, bystander intervention, and legislation and reporting.
+- Each of these items is structured as a `div` element with a number and a corresponding description.
 
 #### ./src/views/events.ejs
 
-The `events.ejs` file represents the "Events" page of the Bullying Wiki website. It contains the HTML structure and content for the events page, including the page title, favicon, CSS stylesheets, and JavaScript file references. Here's a breakdown of the code:
+As of right now, it includes nothing useful but it currently has
 
-> The **head** section includes the necessary metadata, such as character encoding, viewport settings, and page title.
-
-> External resources, such as the website logo and CSS stylesheets, are linked using the **link** tags.
-
-> The **body** section contains the main content of the events page.
-
-> The **include** statement includes the navigation section from a partial file named `nav.ejs`.
+- A `head` section which includes necessary metadata, such as character encoding, viewport settings, and the page title.
+- External resources, such as the website logo and CSS stylesheets, are linked using the `link` tags.
+- The `body` section which contains the main content of the "Events" page.
+- The `include` statement `./partials/nav.ejs` which includes the navigation component in the page.
 
 #### ./src/views/mission.ejs
 
-The `mission.ejs` file represents the "Our Mission" page of the Bullying Wiki website. It contains the HTML structure and content for the mission page, including the page title, favicon, CSS stylesheets, and JavaScript file references. Here's a breakdown of the code:
-> The **head** section includes the necessary metadata, such as character encoding, viewport settings, and page title.
-
-> External resources, such as the website logo and CSS stylesheets, are linked using the **link** tags.
-
-> The **body** section contains the main content of the mission page.
-
-> The **incldue** statement includes the navigation section from a partial file named `nav.ejs`.
-
-> The **p** tag contains a paragraph describing the mission of the Bullying Wiki website, which is to bring awareness to the issue of bullying and cyber-bullying in a fun and informative way.
+Same as `events.ejs`, it doesn't have anything useful, but as of right now has the same components as `events.ejs` with a bit of text.
 
 ### The Future
 
