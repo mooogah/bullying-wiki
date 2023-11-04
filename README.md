@@ -1,3 +1,7 @@
+# THIS WAS ONE OF MY IST PROJECTS I SUBMITTED HALFWAY THROUGH 2023. DON'T HATE, I GOT 100% :)
+
+---
+
 # bullying.wiki
 
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue)](LICENSE)
